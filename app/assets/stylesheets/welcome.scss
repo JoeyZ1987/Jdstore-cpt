@@ -162,7 +162,7 @@
 //------幻灯片图片 样式------
 
 .slide-1{
-  background-image:url('head-1.jpg') ;
+  background:image-url('head-1.jpg') ;
   height: 650px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -170,7 +170,7 @@
 }
 
 .slide-2{
-  background-image:url('head-2.jpg') ;
+  background:image-url('head-2.jpg') ;
   height: 650px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -178,7 +178,7 @@
 }
 
 .slide-3{
-  background-image:url('head-3.jpg') ;
+  background:image-url('head-3.jpg') ;
   height: 650px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -186,7 +186,7 @@
 }
 
 .slide-4{
-  background-image:url('head-4.jpg') ;
+  background:image-url('head-4.jpg') ;
   height: 650px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -338,30 +338,30 @@
 }
 
 .img-1 {
-  background-image:url('pic-1.png') ;
+  background:image-url('pic-1.png') ;
 
 }
 
 .img-2{
-  background-image:url('pic-2.png') ;
+  background:image-url('pic-2.png') ;
 }
 
 .img-3 {
-  background-image:url('pic-3.png') ;
+  background:image-url('pic-3.png') ;
 
 }
 
 .img-4{
-  background-image:url('pic-4.png') ;
+  background:image-url('pic-4.png') ;
 }
 
 .img-5 {
-  background-image:url('pic-5.png') ;
+  background:image-url('pic-5.png') ;
 
 }
 
 .img-6{
-  background-image:url('pic-6.png') ;
+  background:image-url('pic-6.png') ;
 }
 
 .description > h2 {
@@ -428,7 +428,7 @@
 
 .endpic {
   background-color: #000;
-  background-image:url('end.jpg');
+  background:image-url('end.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 35%;
