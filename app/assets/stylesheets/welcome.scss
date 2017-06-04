@@ -1,0 +1,527 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// ------ 头部幻灯片 css ------
+
+.bs-slider{
+    overflow: hidden;
+    height: 650px;
+    position: relative;
+    // margin-bottom: 5em;
+    // background: #000000;
+}
+.bs-slider:hover {
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+.bs-slider:active {
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+.bs-slider .bs-slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.bs-slider > .carousel-inner > .item > img,
+.bs-slider > .carousel-inner > .item > a > img {
+    margin: auto;
+    width: 100% !important;
+}
+
+//Slide effect 幻灯片动效
+
+.fade {
+    opacity: 1;
+}
+.fade .item {
+    top: 0;
+    z-index: 1;
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    left: 0 !important;
+    display: block !important;
+    -webkit-transition: opacity ease-in-out 1s;
+    -moz-transition: opacity ease-in-out 1s;
+    -ms-transition: opacity ease-in-out 1s;
+    -o-transition: opacity ease-in-out 1s;
+    transition: opacity ease-in-out 1s;
+}
+.fade .item:first-child {
+    top: auto;
+    position: relative;
+}
+.fade .item.active {
+    opacity: 1;
+    z-index: 2;
+    -webkit-transition: opacity ease-in-out 1s;
+    -moz-transition: opacity ease-in-out 1s;
+    -ms-transition: opacity ease-in-out 1s;
+    -o-transition: opacity ease-in-out 1s;
+    transition: opacity ease-in-out 1s;
+}
+
+
+//LEFT/RIGHT ROUND CONTROL 幻灯片左右按钮
+
+.control-round .carousel-control {
+    top: 47%;
+    opacity: 0;
+    width: 45px;
+    height: 45px;
+    z-index: 100;
+    color: #ffffff;
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    overflow: hidden;
+    line-height: 43px;
+    text-shadow: none;
+    position: absolute;
+    font-weight: normal;
+    background: transparent;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+}
+.control-round:hover .carousel-control{
+    opacity: 1;
+}
+.control-round .carousel-control.left {
+    left: 1%;
+}
+.control-round .carousel-control.right {
+    right: 1%;
+}
+.control-round .carousel-control.left:hover,
+.control-round .carousel-control.right:hover{
+    color: #fdfdfd;
+    background: rgba(0, 0, 0, 0.5);
+    border: 0px transparent;
+}
+.control-round .carousel-control.left>span:nth-child(1){
+    left: 45%;
+}
+.control-round .carousel-control.right>span:nth-child(1){
+    right: 45%;
+}
+
+
+
+
+
+// INDICATORS CONTROL 幻灯片指示器样式
+
+.indicators-line > .carousel-indicators{
+    position: absolute;
+    bottom: 5%;
+    top:auto;
+    margin: 1px 2px;
+    width: 50%;
+    left:25%;
+    right:25%;
+
+}
+.indicators-line > .carousel-indicators li{
+    width: 6px;
+    height: 6px;
+    margin: 0 2px;
+    background: #fff;
+    opacity: 0.5;
+}
+// .indicators-line > .carousel-indicators li:last-child{
+//     // margin-right: 0;
+// }
+.indicators-line > .carousel-indicators .active{
+    width: 48px;
+    height: 6px;
+    opacity: 0.8;
+
+}
+// .indicators-line > .carousel-indicators .active:before{
+    // transform: scale(0.5);
+    // background-color: #fff;
+    // content:"";
+    // position: absolute;
+    // left:-1px;
+    // top:-1px;
+    // width:15px;
+    // height: 15px;
+    // border-radius: 50%;
+    // -webkit-transition: background-color 0.3s ease;
+    // -moz-transition: background-color 0.3s ease;
+    // -o-transition: background-color 0.3s ease;
+    // transition: background-color 0.3s ease;
+// }
+
+
+//------幻灯片图片 样式------
+
+.slide-1{
+  background-image:url('head-1.jpg') ;
+  height: 650px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-2{
+  background-image:url('head-2.jpg') ;
+  height: 650px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-3{
+  background-image:url('head-3.jpg') ;
+  height: 650px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-4{
+  background-image:url('head-4.jpg') ;
+  height: 650px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+//SLIDE CAPTION 幻灯片文字样式
+
+.slide_style_left {
+    text-align: left !important;
+}
+.slide_style_right {
+    text-align: right !important;
+}
+.slide_style_center {
+    text-align: center !important;
+}
+
+.slide-text {
+    position: absolute;
+    top: 30%;
+    left:0;
+    right:0;
+    padding: 10px 85px;
+
+}
+
+.slide-text > h1 {
+
+    color: #ffffff;
+    text-shadow: 0 4px 10px #555;
+    font-size:4.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.3em;
+    // display: inline-block;
+    // -webkit-animation-delay: 0.7s;
+    // animation-delay: 0.7s;
+    // font-style: normal;
+    // line-height: 4em;
+    // padding: 0;
+}
+.slide-text > p {
+    color: #ffffff;
+    font-weight: 350;
+    text-shadow: 0 0 6px #555;
+    font-size: 2em;
+    margin-bottom: 5em;
+    letter-spacing: 0.1em;
+    // -webkit-animation-delay: 1.1s;
+    // animation-delay: 1.1s;
+    // line-height: 24px;
+    // padding: 0;
+}
+// .slide-text > a.btn-default{
+    // color: #000;
+    // font-weight: 400;
+    // font-size: 13px;
+    // line-height: 15px;
+    // margin-right: 10px;
+    // text-align: center;
+    // padding: 17px 30px;
+    // white-space: nowrap;
+    // letter-spacing: 1px;
+    // display: inline-block;
+    // border: none;
+    // text-transform: uppercase;
+    // -webkit-animation-delay: 2s;
+    // animation-delay: 2s;
+    // -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    // transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+// }
+
+// .slide-text > a.btn-primary{
+//     color: #ffffff;
+//     cursor: pointer;
+//     font-weight: 350;
+//     font-size: 1.2em;
+//     text-align: center;
+//     padding: 17px 55px;
+//     white-space: nowrap;
+//     letter-spacing: 6px;
+//     background: #a91b0c;
+//     display: inline-block;
+// }
+    // line-height: 15px;
+    // margin-left: 10px;
+    // text-decoration: none;
+    // text-transform: uppercase;
+    // border: none;
+    // -webkit-animation-delay: 2s;
+    // animation-delay: 2s;
+    // -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    // transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+
+// .slide-text > a:hover,
+// .slide-text > a:active {
+//     color: #ffffff;
+//     background: #222222;
+//     -webkit-transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+//     transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+// }
+
+
+//------intro 第二个模块------
+
+.intro {
+    overflow: hidden;
+    max-height: 600px;
+    position: relative;
+    background: #fbfbfb;
+    margin-bottom: 5em;
+}
+
+
+//------problems 第三个模块------
+
+.problems {
+    position: relative;
+    margin-bottom: 5em;
+}
+
+.intro > a {
+    position: relative;
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+
+.description.left{
+  text-align:left;
+  padding: 6em 4em 0;
+
+}
+
+.description.right{
+  text-align:left;
+  padding: 6em 4em 0 ;
+
+}
+
+.image{
+  height: 320px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 6em;
+  box-shadow: 0 4px 10px #ccc;
+}
+
+.img-1 {
+  background-image:url('pic-1.png') ;
+
+}
+
+.img-2{
+  background-image:url('pic-2.png') ;
+}
+
+.img-3 {
+  background-image:url('pic-3.png') ;
+
+}
+
+.img-4{
+  background-image:url('pic-4.png') ;
+}
+
+.img-5 {
+  background-image:url('pic-5.png') ;
+
+}
+
+.img-6{
+  background-image:url('pic-6.png') ;
+}
+
+.description > h2 {
+  font-size: 1.8em;
+  color: #333;
+  font-weight: 600;
+  position: relative;
+  text-align: left;
+  top: 0;
+  margin: 1em 0;
+}
+
+.description > p {
+  font-size: 1.2em;
+    color: #777;
+    font-weight: 400;
+    line-height: 34px;
+    position: relative;
+    text-align: left;
+    top: 0;
+}
+
+.description > a {
+  margin-top: 3em;
+}
+
+
+//------service 第四个模块------
+
+.service-bkgd{
+  background-color: #f5f5f5;
+}
+
+.service {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 5em;
+}
+
+
+.img-sqr {
+    width: 150px;
+    height:150px;
+    margin: 2em 0 1em;
+}
+
+
+.img-circle {
+    border-radius: 75px;
+    width: 150px;
+    height:150px;
+    margin: 2em 0 1em;
+}
+
+//------recommend 第五个模块------
+
+.recommend {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 5em;
+}
+
+//------endpic 第六个模块------
+
+.endpic {
+  background-color: #000;
+  background-image:url('end.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 35%;
+  height: 20em;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+
+.pic{
+  font-size: 2.5em;
+  text-shadow: 0 0 10px #555;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 6px;
+  position: relative;
+  text-align: center;
+  margin: 2em 0 0;
+}
+
+.endpic a {
+  position: relative;
+  margin: 3em 0 2em;
+}
+
+// ------RESPONSIVE 响应式布局------
+
+/*---------- MEDIA 480px ----------*/
+// @media  (max-width: 992px) {
+//     .slide-text h1 {
+//         font-size: 4em;
+//         margin-bottom: 0.5em;
+//         letter-spacing: 0.3em;
+//     }
+//     .slide-text > p {
+//         font-size: 1.8em;
+//         margin-bottom: 4.5em;
+//     }
+//     .slide-text > a.btn-primary{
+//       font-weight: 350;
+//       font-size: 1.2em;
+//       padding: 15px 50px;
+//       letter-spacing: 5px;
+//     }
+//
+// }
+//
+//
+// @media  (max-width: 768px) {
+//     .slide-text {
+//         padding: 10px 50px;
+//     }
+//     .slide-text h1 {
+//         font-size: 3em;
+//         margin-bottom: 0.5em;
+//         letter-spacing: 0.3em;
+//     }
+//     .slide-text > p {
+//         font-size: 1.5em;
+//         margin-bottom: 4em;
+//     }
+//     .slide-text > a.btn-primary{
+//       font-weight: 300;
+//       font-size: 1.1em;
+//       padding: 10px 30px;
+//       letter-spacing: 4px;
+//     }
+//
+// }
+// @media  (max-width: 480px) {
+//     .slide-text {
+//         padding: 0 30px;
+//     }
+//     .slide-text h1 {
+//         font-size: 2em;
+//         margin-bottom: 0.5em;
+//         letter-spacing: 0.3em;
+//     }
+//     .slide-text > p {
+//         font-size: 1.2em;
+//         margin-bottom: 3em;
+//     }
+//     .slide-text > a.btn-default,
+//     .slide-text > a.btn-primary {
+//         font-size: 0.8em;
+//         padding: 10px 15px;
+//     }
+//     .indicators-line > .carousel-indicators{
+//         display: none;
+//     }
+//
+//     .control-round .carousel-control{
+//         display: none;
+//     }
+//
+// }
