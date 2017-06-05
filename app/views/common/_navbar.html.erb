@@ -85,15 +85,13 @@
               <% end %>
               </li>
           </ul>
-          <form class="navbar-form navbar-right" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="输入关键词">
-            </div>
-            <button type="submit" class="btn btn-nav">
-              <i class="fa fa-search"> </i>
-              搜索
-            </button>
-          </form>
+          <ul class="navbar-form navbar-right" >
+              <%= search_form_for @q do |f| %>
+              <%= f.label :输入关键词 %>
+              <%= f.search_field :title_cont %>
+              <%= f.submit %>
+              <% end %>
+          </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
