@@ -6,7 +6,7 @@
 
 .bs-slider{
     overflow: hidden;
-    height: 650px;
+    height: 610px;
     position: relative;
     // margin-bottom: 5em;
     // background: #000000;
@@ -66,7 +66,6 @@
     transition: opacity ease-in-out 1s;
 }
 
-
 //LEFT/RIGHT ROUND CONTROL 幻灯片左右按钮
 
 .control-round .carousel-control {
@@ -110,10 +109,6 @@
     right: 45%;
 }
 
-
-
-
-
 // INDICATORS CONTROL 幻灯片指示器样式
 
 .indicators-line > .carousel-indicators{
@@ -133,61 +128,44 @@
     background: #fff;
     opacity: 0.5;
 }
-// .indicators-line > .carousel-indicators li:last-child{
-//     // margin-right: 0;
-// }
+
 .indicators-line > .carousel-indicators .active{
     width: 48px;
     height: 6px;
     opacity: 0.8;
 
 }
-// .indicators-line > .carousel-indicators .active:before{
-    // transform: scale(0.5);
-    // background-color: #fff;
-    // content:"";
-    // position: absolute;
-    // left:-1px;
-    // top:-1px;
-    // width:15px;
-    // height: 15px;
-    // border-radius: 50%;
-    // -webkit-transition: background-color 0.3s ease;
-    // -moz-transition: background-color 0.3s ease;
-    // -o-transition: background-color 0.3s ease;
-    // transition: background-color 0.3s ease;
-// }
 
 
 //------幻灯片图片 样式------
 
 .slide-1{
-  background-image:url('head-1.jpg') ;
-  height: 650px;
+  background:image-url('head-1.jpg') ;
+  height: 610px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .slide-2{
-  background-image:url('head-2.jpg') ;
-  height: 650px;
+  background:image-url('head-2.jpg') ;
+  height: 610px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .slide-3{
-  background-image:url('head-3.jpg') ;
-  height: 650px;
+  background:image-url('head-3.jpg') ;
+  height: 610px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .slide-4{
-  background-image:url('head-4.jpg') ;
-  height: 650px;
+  background:image-url('head-4.jpg') ;
+  height: 610px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -222,13 +200,8 @@
     font-weight: bold;
     margin-bottom: 0.5em;
     letter-spacing: 0.3em;
-    // display: inline-block;
-    // -webkit-animation-delay: 0.7s;
-    // animation-delay: 0.7s;
-    // font-style: normal;
-    // line-height: 4em;
-    // padding: 0;
 }
+
 .slide-text > p {
     color: #ffffff;
     font-weight: 350;
@@ -236,85 +209,20 @@
     font-size: 2em;
     margin-bottom: 5em;
     letter-spacing: 0.1em;
-    // -webkit-animation-delay: 1.1s;
-    // animation-delay: 1.1s;
-    // line-height: 24px;
-    // padding: 0;
 }
-// .slide-text > a.btn-default{
-    // color: #000;
-    // font-weight: 400;
-    // font-size: 13px;
-    // line-height: 15px;
-    // margin-right: 10px;
-    // text-align: center;
-    // padding: 17px 30px;
-    // white-space: nowrap;
-    // letter-spacing: 1px;
-    // display: inline-block;
-    // border: none;
-    // text-transform: uppercase;
-    // -webkit-animation-delay: 2s;
-    // animation-delay: 2s;
-    // -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-    // transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-// }
-
-// .slide-text > a.btn-primary{
-//     color: #ffffff;
-//     cursor: pointer;
-//     font-weight: 350;
-//     font-size: 1.2em;
-//     text-align: center;
-//     padding: 17px 55px;
-//     white-space: nowrap;
-//     letter-spacing: 6px;
-//     background: #a91b0c;
-//     display: inline-block;
-// }
-    // line-height: 15px;
-    // margin-left: 10px;
-    // text-decoration: none;
-    // text-transform: uppercase;
-    // border: none;
-    // -webkit-animation-delay: 2s;
-    // animation-delay: 2s;
-    // -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-    // transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-
-// .slide-text > a:hover,
-// .slide-text > a:active {
-//     color: #ffffff;
-//     background: #222222;
-//     -webkit-transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
-//     transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
-// }
-
 
 //------intro 第二个模块------
 
 .intro {
     overflow: hidden;
-    max-height: 600px;
     position: relative;
-    background: #fbfbfb;
-    margin-bottom: 5em;
 }
-
 
 //------problems 第三个模块------
 
 .problems {
     position: relative;
-    margin-bottom: 5em;
 }
-
-.intro > a {
-    position: relative;
-    text-align: center;
-    margin: 0.5em 0;
-}
-
 
 .description.left{
   text-align:left;
@@ -332,36 +240,36 @@
   height: 320px;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
   margin-top: 6em;
   box-shadow: 0 4px 10px #ccc;
 }
 
 .img-1 {
-  background-image:url('pic-1.png') ;
+  background:image-url('pic-1.png') ;
 
 }
 
 .img-2{
-  background-image:url('pic-2.png') ;
+  background:image-url('pic-2.png') ;
 }
 
 .img-3 {
-  background-image:url('pic-3.png') ;
+  background:image-url('pic-3.png') ;
 
 }
 
 .img-4{
-  background-image:url('pic-4.png') ;
+  background:image-url('pic-4.png') ;
 }
 
 .img-5 {
-  background-image:url('pic-5.png') ;
+  background:image-url('pic-5.png') ;
 
 }
 
 .img-6{
-  background-image:url('pic-6.png') ;
+  background:image-url('pic-6.png') ;
 }
 
 .description > h2 {
@@ -391,14 +299,10 @@
 
 //------service 第四个模块------
 
-.service-bkgd{
-  background-color: #f5f5f5;
-}
 
 .service {
     overflow: hidden;
     position: relative;
-    margin-bottom: 5em;
 }
 
 
@@ -421,14 +325,13 @@
 .recommend {
     overflow: hidden;
     position: relative;
-    margin-bottom: 5em;
 }
 
 //------endpic 第六个模块------
 
 .endpic {
   background-color: #000;
-  background-image:url('end.jpg');
+  background:image-url('end.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 35%;
@@ -438,7 +341,7 @@
 }
 
 
-.pic{
+.slogan{
   font-size: 2.5em;
   text-shadow: 0 0 10px #555;
   color: #fff;

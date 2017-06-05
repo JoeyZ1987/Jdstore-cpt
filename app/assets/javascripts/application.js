@@ -17,6 +17,7 @@
 //= require bootstrap-sprockets
 //= require bootstrap/dropdown
 //= require bootstrap/modal
+//= require bootstrap/tab
 //= require_tree .
 
 $(document).on('click', '.productDecription-menuList-item', function () {
