@@ -7,6 +7,9 @@ class ProductsController < ApplicationController
       @category_id = Category.find_by(name: params[:category]).id
       @products = Product.where(:category_id => @category_id).paginate(:page => params[:page], :per_page => 12)
     end
+
+    @q = Product.ransack(params[:q])
+    @products = @q.result(distinct: true).paginate(:page => params[:page], :per_page => 12)
   end
 
   def show
