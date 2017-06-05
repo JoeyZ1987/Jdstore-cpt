@@ -88,14 +88,12 @@
           <ul class="navbar-form navbar-right" >
             <div class="form-group">
               <%= search_form_for @q do |f| %>
-              <!-- <%= f.label :关键词 %> -->
-              <%= f.search_field :title_cont %>
-            </div>
-            <button type="submit" class="btn btn-nav">
-              <i class="fa fa-search"> </i>
-              搜索
-            </button>
-            <% end %>
+              <%= f.search_field :title_cont, placeholder: "输入关键词" %>
+              <button type="submit" class="btn btn-nav">
+                <i class="fa fa-search"> </i>
+                搜索
+              </button>
+              <% end %>
           </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
