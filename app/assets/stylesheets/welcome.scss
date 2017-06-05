@@ -218,50 +218,50 @@
     position: relative;
 }
 
-//------problems 第三个模块------
+//------problems 第三个模块 写在 application 里了------
 
-.problems {
-    position: relative;
-}
-
-.description.left{
-  text-align:left;
-  padding: 6em 4em 0;
-
-}
-
-.description.right{
-  text-align:left;
-  padding: 6em 4em 0 ;
-
-}
-
-
-
-
-.description > h2 {
-  font-size: 1.8em;
-  color: #333;
-  font-weight: 600;
-  position: relative;
-  text-align: left;
-  top: 0;
-  margin: 1em 0;
-}
-
-.description > p {
-  font-size: 1.2em;
-    color: #777;
-    font-weight: 400;
-    line-height: 34px;
-    position: relative;
-    text-align: left;
-    top: 0;
-}
-
-.description > a {
-  margin-top: 3em;
-}
+// .problems {
+//     position: relative;
+// }
+//
+// .description.left{
+//   text-align:left;
+//   padding: 6em 4em 0;
+//
+// }
+//
+// .description.right{
+//   text-align:left;
+//   padding: 6em 4em 0 ;
+//
+// }
+//
+//
+//
+//
+// .description > h2 {
+//   font-size: 1.8em;
+//   color: #333;
+//   font-weight: 600;
+//   position: relative;
+//   text-align: left;
+//   top: 0;
+//   margin: 1em 0;
+// }
+//
+// .description > p {
+//   font-size: 1.2em;
+//     color: #777;
+//     font-weight: 400;
+//     line-height: 34px;
+//     position: relative;
+//     text-align: left;
+//     top: 0;
+// }
+//
+// .description > a {
+//   margin-top: 3em;
+// }
 
 
 //------service 第四个模块------
