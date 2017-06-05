@@ -1101,7 +1101,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #d9230f;
+  color: #777;
   text-decoration: none;
 }
 a:hover,
@@ -2602,7 +2602,10 @@ textarea.form-control {
   height: auto;
 }
 input[type="search"] {
-  -webkit-appearance: none;
+  margin-top: 4px;
+  border-radius: 4px;
+  height: 28px;
+  border: solid 1px #dddddd;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   input[type="date"].form-control,
@@ -5005,9 +5008,9 @@ a.badge:focus {
   }
 }
 .thumbnail {
-  display: block;
-  padding: 4px;
-  margin-bottom: 18px;
+  // display: block;
+  // padding: 4px;
+  margin-bottom: 0.6em;
   line-height: 1.42857143;
   background-color: #fcfcfc;
   border: 1px solid #dddddd;
@@ -5015,6 +5018,10 @@ a.badge:focus {
   -webkit-transition: border 0.2s ease-in-out;
   -o-transition: border 0.2s ease-in-out;
   transition: border 0.2s ease-in-out;
+  box-shadow: 0 4px 10px #ccc;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .thumbnail > img,
 .thumbnail a > img {
