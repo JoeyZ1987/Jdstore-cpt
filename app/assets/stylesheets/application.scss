@@ -458,3 +458,98 @@ p.text-footer2 {
 .nopadding {
    padding: 0 !important;
  }
+
+//------图片------
+
+.image{
+  height: 320px;
+  width: 426px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  margin-top: 6em;
+  box-shadow: 0 4px 10px #ccc;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-1 {
+  background:image-url('pic-1.jpg') ;
+}
+
+.img-2{
+  background:image-url('pic-2.jpg') ;
+}
+
+.img-3 {
+  background:image-url('pic-3.jpg') ;
+
+}
+
+.img-4{
+  background:image-url('pic-4.png') ;
+}
+
+.img-5 {
+  background:image-url('pic-5.jpg') ;
+
+}
+
+.img-6{
+  background:image-url('pic-6.png') ;
+}
+
+.img-7 {
+  background:image-url('pic-7.png') ;
+}
+
+.img-8 {
+  background:image-url('pic-8.jpg') ;
+}
+
+.img-9 {
+  background:image-url('pic-9.png') ;
+}
+
+.img-10 {
+  background:image-url('pic-10.png') ;
+}
+
+
+.description.left{
+  text-align:left;
+  padding: 5em 2em 0;
+
+}
+
+.description.right{
+  text-align:left;
+  padding: 5em 2em 0;
+
+}
+
+
+.description > h2 {
+  font-size: 1.8em;
+  color: #333;
+  font-weight: 600;
+  position: relative;
+  text-align: left;
+  top: 0;
+  margin: 1em 0;
+}
+
+.description > p {
+  font-size: 1.2em;
+    color: #777;
+    font-weight: 400;
+    line-height: 34px;
+    position: relative;
+    text-align: left;
+    top: 0;
+}
+
+.description > a {
+  margin-top: 3em;
+}
