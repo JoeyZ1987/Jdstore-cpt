@@ -12,6 +12,6 @@ u.password_confirmation = "111111"
 u.is_admin = true
 u.save
 
-Category.create(name: "舒适空间")
-Category.create(name: "安静空间")
-Category.create(name: "高效空间")
+Category.create(name: "舒适的坐姿")
+Category.create(name: "宜人的环境")
+Category.create(name: "规整的空间")

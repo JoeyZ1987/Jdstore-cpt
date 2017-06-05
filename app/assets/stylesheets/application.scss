@@ -308,6 +308,19 @@ html {
   cursor: default;
 }
 
+.nav-pills {
+  width: 100%;
+  border-bottom: 2px solid #a91b0c;
+}
+
+.nav-pills > li {
+  position: relative;
+  left: 10%;
+  width: 18%;
+  margin-bottom: -1px;
+  margin: 0% 1%;
+}
+
 
 //------所有的标题 CSS 样式------
 
@@ -353,6 +366,25 @@ h2 {
     padding: 0 2em;
 }
 
+p.title {
+  font-size: 1em;
+  color: #000;
+  font-weight: 600;
+  line-height: 1.8em;
+  position: relative;
+  text-align: center;
+  top: 0;
+}
+
+p.price {
+  font-size: 1em;
+  color: #444;
+  font-weight: 400;
+  position: relative;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
 p.text-center {
   font-size: 1em;
   color: #777;
@@ -381,17 +413,25 @@ p.text-footer2 {
   margin: 0;
 }
 
+
 //------通用排版组件------
 
  /*间距*/
 .sp-1{
-   padding-bottom: 6em;
+   padding-bottom: 5em;
 }
 
 .sp-2{
-  padding-top: 6em;
+  margin-top: 3em;
 }
 
+.sp-3{
+  padding-bottom: 4em;
+}
+
+.sp-4{
+  padding-top: 1em;
+}
 
 .space{
   margin: 5% 0% 4%;
@@ -399,6 +439,12 @@ p.text-footer2 {
 
 .space-bottom{
   margin: 0% 0% 4%;
+}
+
+//------装饰元素-------
+
+.shadow{
+  box-shadow: 0 4px 10px #ccc
 }
 
 //------全局响应式布局 CSS ------
