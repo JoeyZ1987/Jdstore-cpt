@@ -2,11 +2,14 @@ class ProductsController < ApplicationController
   def index
     if params[:category].blank?
       @products = Product.all
-      @products = @products.paginate(:page => params[:page], :per_page => 6)
+      @products = @products.paginate(:page => params[:page], :per_page => 12)
     else
       @category_id = Category.find_by(name: params[:category]).id
-      @products = Product.where(:category_id => @category_id).paginate(:page => params[:page], :per_page => 6)
+      @products = Product.where(:category_id => @category_id).paginate(:page => params[:page], :per_page => 12)
     end
+
+    @q = Product.ransack(params[:q])
+    @products = @q.result(distinct: true).paginate(:page => params[:page], :per_page => 12)
   end
 
   def show
