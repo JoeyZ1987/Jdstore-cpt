@@ -10,12 +10,13 @@ class ImageUploader < CarrierWave::Uploader::Base
 
   storage :qiniu
 
-
+# ------ 在本地运行时启用以下代码
   # if Rails.env.production? #远端
   # storage :qiniu
   # elsif Rails.env.development? #本地
   # storage :file
   # end
+# ------ 代码到“end”为止
 
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
