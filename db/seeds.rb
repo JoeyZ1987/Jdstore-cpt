@@ -5,12 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-u = User.new
-u.email = "111111@qq.com"
-u.password = "111111"
-u.password_confirmation = "111111"
-u.is_admin = true
-u.save
+create_account = User.create([email: 'admin@gmail.com', password:'12345678', password_confirmation: '12345678', is_admin: 'true'])
+puts "Admin account created."
 
 Category.create(name: "舒适的坐姿")
 Category.create(name: "宜人的环境")
