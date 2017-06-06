@@ -1,0 +1,21 @@
+<div class="box panel product-search p15 fl panel-default">
+  <p class="productList-item-pic w200 h200">
+
+ <%= link_to product_path(product) do %>
+   <% if product.image.present? %>
+     <%= image_tag(product.image.thumb.url, class: "thumbnail") %>
+   <% else %>
+     <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
+   <% end %>
+ <% end %>
+ </p >
+
+  <div class="panel-body" style="padding:5px;">
+
+      <p class="productList-item-price fb col-red f18 mt10">￥<%= product.price %>
+        <p class="productList-item-name ell">
+    <%= link_to product_path(product) do %>
+       <%= product.title %>
+    <% end %>
+  </div>
+</div>
