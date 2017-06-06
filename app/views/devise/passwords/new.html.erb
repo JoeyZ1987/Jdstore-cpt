@@ -1,4 +1,4 @@
-div class="login-wrap">
+<div class="login-wrap">
   <div class="moving-bg">
     <div class="image-content">
       <div class="w1200 clearfix bc mt50 pb20">
@@ -11,7 +11,7 @@ div class="login-wrap">
       <div class="content clearfix">
         <div class="right-part fr">
           <div class="devise">
-            <h2>忘记</h2>
+            <h2 class="login">忘记</h2>
 
             <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
               <%= f.error_notification %>

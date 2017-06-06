@@ -2604,7 +2604,6 @@ textarea.form-control {
 input[type="search"] {
   margin-top: 4px;
   border-radius: 4px;
-  height: 28px;
   border: solid 1px #dddddd;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
@@ -4392,8 +4391,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     display: inline-block;
     width: auto;
     vertical-align: middle;
-    height: 28px;
-    margin-top: 5px;
+
   }
   .navbar-form .form-control-static {
     display: inline-block;

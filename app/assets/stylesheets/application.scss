@@ -30,7 +30,7 @@
 
 .page-main {
   margin-top: 40px;
-  min-height: 960px;
+  min-height: 768px;
 }
 
 .navbar-brand{
@@ -261,17 +261,17 @@ html {
   border-radius: 30px;
 }
 
-.btn.btn-nav{
-  font-weight: 200;
-  font-size: 1em;
-  text-align: center;
-  color: #ffffff;
-  background: #616161;
-  box-shadow: 0 0 1px #424242;
-  margin-top: 5px;
-  height:28px;
-  padding: 0 8px;
-}
+// .btn.btn-nav{
+//   font-weight: 200;
+//   font-size: 1em;
+//   text-align: center;
+//   color: #ffffff;
+//   background: #616161;
+//   box-shadow: 0 0 1px #424242;
+//   margin-top: 5px;
+//   height:28px;
+//   padding: 0 8px;
+// }
 
 .tabs {
 	width: 100%;
@@ -518,13 +518,13 @@ p.text-footer2 {
 
 
 .description.left{
-  text-align:left;
+  text-align:center;
   padding: 5em 2em 0;
 
 }
 
 .description.right{
-  text-align:left;
+  text-align:center;
   padding: 5em 2em 0;
 
 }
@@ -535,7 +535,7 @@ p.text-footer2 {
   color: #333;
   font-weight: 600;
   position: relative;
-  text-align: left;
+  text-align: center;
   top: 0;
   margin: 1em 0;
 }
