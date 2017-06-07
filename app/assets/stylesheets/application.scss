@@ -30,7 +30,8 @@
 
 .page-main {
   margin-top: 40px;
-  min-height: 768px;
+  padding-bottom: 200px
+
 }
 
 .navbar-brand{
@@ -58,11 +59,14 @@ html {
  }
 
 
- .footer {
-  position: relative;
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   background-color: #202020;
   padding: 40px;
-  min-height: 150px;
+  height: 200px;
+  clear: both;
 }
 
   /*5种背景颜色*/
@@ -237,6 +241,16 @@ html {
     background: #a91b0c;
     display: inline-block;
     box-shadow: 0 2px 4px #961b0c;
+}
+
+.btn.btn-login{
+    border-radius: 6px;
+    width: 100%;
+    height: 34px;
+    border: none;
+    font-size: 16px;
+    width: 315px;
+    margin: 0 auto;
 }
 
 .btn.btn-head {
@@ -435,6 +449,7 @@ p.text-footer2 {
   padding-top: 1em;
 }
 
+
 .space{
   margin: 5% 0% 4%;
 }
@@ -442,14 +457,6 @@ p.text-footer2 {
 .space-bottom{
   margin: 0% 0% 4%;
 }
-
-//------装饰元素-------
-
-.shadow{
-  box-shadow: 0 4px 10px #ccc
-}
-
-//------全局响应式布局 CSS ------
 
 .nomargin {
     margin: 0 !important;
@@ -459,7 +466,33 @@ p.text-footer2 {
    padding: 0 !important;
  }
 
+.box-center {
+  text-align: center;
+}
+
+.center_btn{
+  display: inline-block;
+}
+
+//------装饰元素-------
+
+.shadow{
+  box-shadow: 0 4px 10px #ccc
+}
+
+
 //------图片------
+
+.empty-pic {
+  background:image-url('cart_empty.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 128px;
+  height: 128px;
+  display: inline-block;
+  background-size: contain;
+  margin-top: 120px;
+}
 
 .image{
   height: 320px;

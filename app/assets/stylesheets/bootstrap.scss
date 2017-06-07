@@ -1611,6 +1611,9 @@ pre code {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  min-height: 100%;
+  height: 100%;
+  position: relative;
 }
 .row {
   margin-left: -15px;
@@ -5036,10 +5039,12 @@ a.thumbnail.active {
   color: #777777;
 }
 .alert {
+
   padding: 15px 0 15px 40px;
   margin-top: 40px;
   border: 1px solid transparent;
   border-radius: 4px;
+  // z-index: 10; // 让消息显示在最上面
 }
 .alert h4 {
   margin-top: 0;
