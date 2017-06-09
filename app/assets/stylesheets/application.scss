@@ -450,11 +450,11 @@ p.text-footer2 {
 }
 
 .sp-5{
-  margin-top: 5em;
+  margin-bottom: 1em;
 }
 
 .sp-6{
-  margin-bottom: 1em;
+  margin-top: 5em;
 }
 
 .space{
@@ -485,6 +485,7 @@ p.text-footer2 {
   margin-bottom: 60px;
 }
 
+
 //------装饰元素-------
 
 .shadow{
@@ -497,7 +498,38 @@ p.text-footer2 {
   text-align: center;
   // margin-top:13em;
 }
+//
+// .prdct-thumbnail{
+//   // display: block;
+//   // padding: 4px;
+//   margin-bottom: 0.6em;
+//   line-height: 1.42857143;
+//   background-color: #fcfcfc;
+//   border: 1px solid #dddddd;
+//   border-radius: 4px;
+//   -webkit-transition: border 0.2s ease-in-out;
+//   -o-transition: border 0.2s ease-in-out;
+//   transition: border 0.2s ease-in-out;
+//   box-shadow: 0 4px 10px #ccc;
+// }
 
+
+
+.pic-product{
+  float: left;
+  margin-left: 13%
+}
+
+.info{
+  float: left;
+  margin-left: 13%;
+}
+
+.intro-text{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .cart-title{
   padding-left: 15px;
@@ -507,6 +539,17 @@ p.text-footer2 {
 
 .empty-pic {
   background:image-url('cart_empty.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 128px;
+  height: 128px;
+  display: inline-block;
+  background-size: contain;
+  margin-top: 120px;
+}
+
+.search-empty-pic{
+  background:image-url('search_empty.png');
   background-repeat: no-repeat;
   background-position: center;
   width: 128px;
@@ -575,6 +618,7 @@ p.text-footer2 {
   width: 60px;
   height: 60px;
 }
+
 
 .description.left{
   text-align:center;
