@@ -28,25 +28,25 @@
       <br>
       <br>
       <br>
-      <p class="intro-text-value bg-gray">
-        <span class="pl20 pr30">售价</span>：<span class="price f24 fb col-red">￥<%= @product.price %></span>
+      <p>
+        <span>售价</span>：<span style="font-size:1.2em; font-weight:600">￥<%= @product.price %></span>
       </p>
       <br>
-      <p class="intro-text-count">
-        <span >库存</span>：<span id="quantity"><%= @product.quantity %></span>
+      <p>
+        <span >还剩</span>：<span><%= @product.quantity %></span> 件
       </p>
       <br>
 
       <p>
-        <span >简介</span>：<span class="intro-text-desc"><%= @product.description %></span>
+        <span >简介</span>：<span><%= @product.description %></span>
       </p>
       <br>
-      <p class="intro-text-service">
+      <p>
         <span style="color:#a91b0c">满99元包邮 七天无理由退货 </span>
       </p>
       <br>
       <br>
-      <p class="intro-text-btnWrap">
+      <p>
       <% if @product.quantity > 0 %>
         <%= link_to("加入购物车", add_to_cart_product_path(@product), :method => :post, :class => "btn btn-primary btn-normal") %>
       <% else %>
