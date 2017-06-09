@@ -449,6 +449,13 @@ p.text-footer2 {
   padding-top: 1em;
 }
 
+.sp-5{
+  margin-top: 5em;
+}
+
+.sp-6{
+  margin-bottom: 1em;
+}
 
 .space{
   margin: 5% 0% 4%;
@@ -474,12 +481,27 @@ p.text-footer2 {
   display: inline-block;
 }
 
+.cart_items{
+  margin-bottom: 60px;
+}
+
 //------装饰元素-------
 
 .shadow{
   box-shadow: 0 4px 10px #ccc
 }
 
+.total {
+  padding: 20px 40px;
+  background-color: #eee;
+  text-align: center;
+  // margin-top:13em;
+}
+
+
+.cart-title{
+  padding-left: 15px;
+}
 
 //------图片------
 
@@ -549,6 +571,10 @@ p.text-footer2 {
   background:image-url('pic-10.jpg') ;
 }
 
+.img-sx {
+  width: 60px;
+  height: 60px;
+}
 
 .description.left{
   text-align:center;
