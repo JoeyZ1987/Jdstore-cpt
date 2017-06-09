@@ -4,11 +4,12 @@
   <h2 class="pull-left nomargin"> 我的购物车 </h2>
 </br>
 </br>
-    <i class="fa fa-trash"> </i>
+    <span style="margin-left:15px"><i class="fa fa-trash"> </i>
     <%= link_to("清空购物车", clean_carts_path ,
             method: :delete ,
             style: "text-decoration: none",
             data: { confirm: "你确定要清空整个购物车吗？"} )%>
+    </span>
   </div>
 
   <!-- 购物车列表 -->
@@ -24,9 +25,9 @@
               <td>
                 <%= link_to product_path(cart_item.product) do %>
                   <% if cart_item.product.image.present? %>
-                    <%= image_tag(cart_item.product.image.thumb.url, class: "img-sx") %>
+                    <%= image_tag(cart_item.product.image.thumb.url, class: "img-sx", style:"margin-left:15px; padding:6px") %>
                   <% else %>
-                    <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "img-sx") %>
+                    <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "img-sx", style:"margin-left:15px; padding:6px") %>
                   <% end %>
                 <% end %>
               </td>
@@ -64,11 +65,11 @@
 
   <div class="total clearfix col-md-3 ">
        <span>
-         <h3 >总计</h3>
+         <h3 ><i class="fa fa-list-alt"></i> · 总计</h3>
           <hr>
-         <h4>总共 <%= render_quantity(current_cart) %> 件商品</h4>
+         <h4>共 <%= render_quantity(current_cart) %> 件商品</h4>
        </br>
-          <h4> 总计 <%= render_cart_total_price(current_cart) %> RMB</h4>
+          <h4> 共计 <%= render_cart_total_price(current_cart) %> 元</h4>
        </span>
     <hr>
     <%= link_to("确认购买", checkout_carts_path, method: :post, class: "btn btn-normal btn-primary btn-round") %>

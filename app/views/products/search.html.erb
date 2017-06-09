@@ -1,14 +1,18 @@
-<div class="minHeight1000 bg-gray">
-  <div class="productList-wrap search-page w1200 pt30 bc">
+<div class="container">
+  <div class="search-page sp-4">
       <% if @products.present? %>
-        <h5 class="collection search-count">已为您找到<%= @products.count %>个宝贝</h5>
-
-          <ul class="productList clearfix pb20">
+        <span style="margin-left:6em">已为您找到<%= @products.count %>个宝贝</span>
+          <ul class="productList">
             <%= render :partial => "product_items", :collection => @products, :as => :product %>
           </ul>
-
       <% else %>
-        <p class="tc mt100">亲，没有搜索到商品哦，要不换个关键词试试？</p >
+        <div class="col-md-12">
+          <div class="box-center">
+            <p class="search-empty-pic"></p>
+            <h3> 嗯~ 没找到你说的东西，换个关键词试试？ </h3>
+            <a href="/products" class="btn btn-primary btn-round btn-normal"> 要不去这儿看看</a>
+          </div>
+        </div>
       <% end %>
   </div>
 </div>
