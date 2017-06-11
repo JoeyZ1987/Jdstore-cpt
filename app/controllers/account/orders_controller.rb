@@ -27,4 +27,10 @@ class Account::OrdersController < ApplicationController
     flash[:notice] = "已提交申请"
     redirect_to :back
   end
+
+  def confirm
+    @order = Order.find_by_token(params[:id])
+    @order.good_job!
+    redirect_to order_path(@order.token), notice: "此订单已完成"
+  end
 end
