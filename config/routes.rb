@@ -37,6 +37,7 @@ Rails.application.routes.draw do
    namespace :account do
    resources :orders do
       member do
+        post :confirm
         post :pay_with_alipay
         post :pay_with_wechat
         post :apply_to_cancel
